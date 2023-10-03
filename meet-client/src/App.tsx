@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import CookieConsent from 'react-cookie-consent';
 import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload. hello world
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
+    <>
+      fdsfds
+      <div className='App'>
+        <CookieConsent
+          location='bottom'
+          buttonText='Sure man!!'
+          cookieName='meet-ackcook-ban'
+          style={{ background: '#2B373B' }}
+          buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+          expires={150}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          This website uses cookies to enhance the user experience.{' '}
+          <span style={{ fontSize: '10px' }}>
+            This bit of text is smaller :O
+          </span>
+        </CookieConsent>
+      </div>
+    </>
   );
 }
 
